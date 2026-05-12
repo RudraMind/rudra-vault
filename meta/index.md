@@ -1,5 +1,5 @@
 # Wiki Index
-_Last updated: 2026-05-12 | Pages: 2 | Sources ingested: 1_
+_Last updated: 2026-05-12 | Pages: 8 | Sources ingested: 3_
 
 ## Entities
 | Page | Summary | Tags | Sources |
@@ -9,6 +9,9 @@ _Last updated: 2026-05-12 | Pages: 2 | Sources ingested: 1_
 | Page | Summary | Tags | Sources |
 |------|---------|------|---------|
 | [[handshake-skill]] | Two-mode Claude Code skill: SAVE captures session state, LOAD restores it | claude-code, tooling, session-management | [[2026-05-12-handshake-skill]] |
+| [[context-monitor]] | Auto-warning system for Claude Code context window limits (60/65/70%) | claude-code, automation, hooks | [[2026-05-12-context-monitor]] |
+| [[context-recovery]] | Recovery-of-thought protocol: /handshake → /clear → /handshake upload | session-management, workflow | [[2026-05-12-context-monitor]] |
+| [[caveman-mode]] | Output style: terse, drop articles/filler/hedging, fragments OK | claude-code, tooling | [[2026-05-12-claude-md-guidelines]] |
 
 ## Projects
 | Page | Summary | Tags | Sources |
@@ -18,6 +21,8 @@ _Last updated: 2026-05-12 | Pages: 2 | Sources ingested: 1_
 | Page | Summary | Date | |
 |------|---------|------|--|
 | [[2026-05-12-handshake-skill]] | Handshake skill SKILL.md — session snapshot/restore tool for Claude Code | 2026-05-12 | |
+| [[2026-05-12-context-monitor]] | Context monitor system: hooks + statusline integration for token warnings | 2026-05-12 | |
+| [[2026-05-12-claude-md-guidelines]] | CLAUDE.md — coding guidelines: think-before-coding, simplicity-first, surgical changes | 2026-05-12 | |
 
 ## Queries
 | Page | Summary | Date | |
