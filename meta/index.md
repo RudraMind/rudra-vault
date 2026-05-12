@@ -1,5 +1,5 @@
 # Wiki Index
-_Last updated: 2026-05-11 | Pages: 0 | Sources ingested: 0_
+_Last updated: 2026-05-12 | Pages: 2 | Sources ingested: 1_
 
 ## Entities
 | Page | Summary | Tags | Sources |
@@ -8,6 +8,7 @@ _Last updated: 2026-05-11 | Pages: 0 | Sources ingested: 0_
 ## Concepts
 | Page | Summary | Tags | Sources |
 |------|---------|------|---------|
+| [[handshake-skill]] | Two-mode Claude Code skill: SAVE captures session state, LOAD restores it | claude-code, tooling, session-management | [[2026-05-12-handshake-skill]] |
 
 ## Projects
 | Page | Summary | Tags | Sources |
@@ -16,6 +17,7 @@ _Last updated: 2026-05-11 | Pages: 0 | Sources ingested: 0_
 ## Sources
 | Page | Summary | Date | |
 |------|---------|------|--|
+| [[2026-05-12-handshake-skill]] | Handshake skill SKILL.md — session snapshot/restore tool for Claude Code | 2026-05-12 | |
 
 ## Queries
 | Page | Summary | Date | |
