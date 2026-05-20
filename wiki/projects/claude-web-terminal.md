@@ -3,8 +3,8 @@ type: project
 tags: [node.js, terminal, browser, pty, claude-code, open-source, rudramind]
 created: 2026-05-19
 updated: 2026-05-19
-sources: []
-related: [claude-handshake-project, rudramind-pages-hub]
+sources: [2026-05-19-claude-web-terminal-design, 2026-05-19-rudra-ui-redesign-plan, 2026-05-19-rudra-completion]
+related: [claude-handshake-project, rudramind-pages-hub, rudramind]
 disambiguates: ""
 archived: ""
 superseded_by: ""
@@ -44,21 +44,26 @@ Locally-hosted Node.js server serving real interactive terminals in the browser.
 - Resize syncs to PTY via JSON messages over WebSocket
 - Dead tab shows `[Process exited]` + strikethrough, no auto-reconnect
 
-## RUDRA UI Redesign (pending)
+## RUDRA UI Redesign (COMPLETE 2026-05-19)
 
-Full frontend rewrite (`index.html` + `styles.css` + `app.js` only — `server.js` unchanged).
+Full frontend rewrite — `index.html` + `styles.css` + `app.js` (server.js unchanged). 588-line app.js. Pushed to GitHub as 10-commit history, user confirmed working in browser.
 
-Key additions:
+Key additions shipped:
 - Product identity: `◉ RUDRA` header + About panel
-- Split-pane view with draggable divider (min 20%, max 80%)
+- Split-pane view with draggable divider (min 20%, max 80%) via `SplitManager`
 - Status bar: live dot + connection + shell type + tab name + dimensions
 - Dropdown menus for new terminal + split actions
-- Tab rename (double-click)
-- JetBrains Mono font (jsDelivr), new deep dark color system
-- `SplitManager` class, `updateStatusBar()`, `makeTabLabelEditable()`
+- Tab rename (double-click → inline input → Enter to commit)
+- JetBrains Mono font (jsDelivr), deep dark color system (`--bg-workspace: #0d0d14`)
 - RUDRA_THEME xterm: violet cursor `#a78bfa`, full 16-color palette
 
-Spec: `C:\Users\conne\.claude\projects\claudecli-web\design requirement\Extended URL design\ui.md`
+Security fixes added post-review:
+- CSP + `X-Frame-Options` + `X-Content-Type-Options` headers in Express
+- SRI integrity hashes on all 5 CDN resources
+- `hasOwnProperty` shell check (was `!SHELLS[shellKey]` — `__proto__` bypass)
+- Resize bounds validation: `Number.isInteger` + range check (1-1000 cols, 1-500 rows)
+
+GitHub: https://github.com/RudraMind/claude-web-terminal (master, 10 commits, HEAD 5e4b009)
 
 ## Key Concepts
 
@@ -78,4 +83,6 @@ Spec: `C:\Users\conne\.claude\projects\claudecli-web\design requirement\Extended
 ## Progress Log
 
 - 2026-05-19: v1 complete. server.js + 3 frontend files + README. npm start working, both tab types confirmed live.
-- 2026-05-19: RUDRA UI redesign spec read. Next: implement 10-phase rewrite.
+- 2026-05-19: RUDRA UI redesign spec read, 10-phase rewrite implemented.
+- 2026-05-19: RUDRA complete — 588-line app.js, code review + security audit passed, pushed to GitHub (10 commits).
+- 2026-05-19: User confirmed RUDRA working in browser. Project complete.

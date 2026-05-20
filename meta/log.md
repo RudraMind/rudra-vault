@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-05-20] ingest | Handshake backup files — claude-handshake ship + RUDRA completion
+- Sources: `~/.claude/backups/handshakes/` — 8 named backup files read and evaluated
+- New sources created: [[2026-05-13-claude-handshake-github-ship]], [[2026-05-19-rudra-completion]]
+- New entities: [[rudramind]] (was stub [[RudraMind]] in 3 pages — now a full entity page)
+- Updated: [[claude-web-terminal]] project — RUDRA status changed from pending → complete, security fixes documented
+- Updated: [[claude-handshake-project]] — added [[2026-05-13-claude-handshake-github-ship]] as source
+- Updated: meta/index.md — synced to 19 pages (was showing 12, wiki had 15 unindexed)
+- Stubs resolved: [[RudraMind]] → rudramind entity page created
+- Stubs still pending: [[set-euo-pipefail]], [[redirect-vs-mirror-install-pattern]], [[crlf-lf-windows-git]], [[xterm-js]], [[websocket-pty-bridge]], [[sri-integrity-hashes]]
+- Contradictions: [[2026-05-19-rudra-completion]] flags WS protocol mismatch vs [[2026-05-19-rudra-ui-redesign-plan]]
+- Pages touched: 3 created + 3 updated + 2 meta = 8
+
 ## [2026-05-14] ingest | RudraMind GitHub Pages — Install Hub Runbook
 - Source: `~/.claude/docs/GIT/rudramind-pages-runbook.md` → copied to `raw/notes/2026-05-14-rudramind-pages-runbook.md`
 - Created: [[2026-05-14-rudramind-pages-runbook]], [[claude-handshake-project]], [[rudramind-pages-hub]], [[github-pages-install-hub]]

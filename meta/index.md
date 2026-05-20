@@ -1,8 +1,10 @@
 # Wiki Index
-_Last updated: 2026-05-14 | Pages: 12 | Sources ingested: 4_
+_Last updated: 2026-05-20 | Pages: 19 | Sources ingested: 7_
 
 ## Entities
 | Page | Summary | Tags | Sources |
+|------|---------|------|---------|
+| [[rudramind]] | GitHub org + personal brand for Raj's open-source AI tooling | github, identity | [[2026-05-14-rudramind-pages-runbook]], [[2026-05-13-claude-handshake-github-ship]], [[2026-05-19-rudra-completion]] |
 
 ## Concepts
 | Page | Summary | Tags | Sources |
@@ -12,12 +14,14 @@ _Last updated: 2026-05-14 | Pages: 12 | Sources ingested: 4_
 | [[context-recovery]] | Recovery-of-thought protocol: /handshake → /clear → /handshake upload | session-management, workflow | [[2026-05-12-context-monitor]] |
 | [[caveman-mode]] | Output style: terse, drop articles/filler/hedging, fragments OK | claude-code, tooling | [[2026-05-12-claude-md-guidelines]] |
 | [[github-pages-install-hub]] | Free GitHub Pages pattern serving clean install URLs for OSS tools | github-pages, install-scripts, devtools | [[2026-05-14-rudramind-pages-runbook]] |
+| [[node-pty]] | Node.js native module for real PTY processes — mandatory for interactive CLI in browser | node.js, terminal, pty, windows | [[2026-05-19-claude-web-terminal-design]] |
 
 ## Projects
 | Page | Summary | Tags | Sources |
 |------|---------|------|---------|
-| [[claude-handshake-project]] | Public Claude Code skill solving context rot — /handshake + /handshake upload | claude-code, open-source, rudramind | [[2026-05-14-rudramind-pages-runbook]], [[2026-05-12-handshake-skill]] |
+| [[claude-handshake-project]] | Public Claude Code skill solving context rot — /handshake + /handshake upload | claude-code, open-source, rudramind | [[2026-05-14-rudramind-pages-runbook]], [[2026-05-12-handshake-skill]], [[2026-05-13-claude-handshake-github-ship]] |
 | [[rudramind-pages-hub]] | GitHub Pages install hub at rudramind.github.io — routes clean install URLs to skill repos | github-pages, install-hub, rudramind | [[2026-05-14-rudramind-pages-runbook]] |
+| [[claude-web-terminal]] | Browser-based real PTY terminal (CMD + Claude Code), RUDRA UI — complete, shipped to GitHub 2026-05-19 | node.js, terminal, browser, pty, open-source, rudramind | [[2026-05-19-claude-web-terminal-design]], [[2026-05-19-rudra-ui-redesign-plan]], [[2026-05-19-rudra-completion]] |
 
 ## Sources
 | Page | Summary | Date | |
@@ -26,6 +30,10 @@ _Last updated: 2026-05-14 | Pages: 12 | Sources ingested: 4_
 | [[2026-05-12-handshake-skill]] | Handshake skill SKILL.md — session snapshot/restore tool for Claude Code | 2026-05-12 | |
 | [[2026-05-12-context-monitor]] | Context monitor system: hooks + statusline integration for token warnings | 2026-05-12 | |
 | [[2026-05-12-claude-md-guidelines]] | CLAUDE.md — coding guidelines: think-before-coding, simplicity-first, surgical changes | 2026-05-12 | |
+| [[2026-05-13-claude-handshake-github-ship]] | claude-handshake v1.0.0 GitHub publish — repo creation, push, README polish, gh CLI path fix | 2026-05-13 | |
+| [[2026-05-19-claude-web-terminal-design]] | Build spec for claude-web-terminal: node-pty, WebSocket, security model | 2026-05-19 | |
+| [[2026-05-19-rudra-ui-redesign-plan]] | 10-phase RUDRA UI implementation plan: Tab/TabManager/SplitManager, split pane, shortcuts | 2026-05-19 | |
+| [[2026-05-19-rudra-completion]] | RUDRA completion + security audit: 4 fixes (CSP, SRI, hasOwnProperty, resize bounds) | 2026-05-19 | |
 
 ## Queries
 | Page | Summary | Date | |
