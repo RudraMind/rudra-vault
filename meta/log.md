@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-05-23] ingest | Claude Code Chrome Extension — Post-Mortem + Build Spec
+- Sources: `raw/articles/2026-05-23-claude-code-chrome-post-mortem.md`, `raw/articles/2026-05-23-chrome-extension-nmh-pty-build-spec.md`
+- Created: [[claude-code-chrome]], [[native-messaging-host]], [[chrome-sw-per-panel-routing]], [[pty-killed-flag-pattern]], [[2026-05-23-claude-code-chrome-post-mortem]], [[2026-05-23-chrome-extension-nmh-pty-build-spec]]
+- Updated: [[node-pty]] — added Windows cmd.exe workaround + prebuilt vs build-from-source section
+- Stubs: [[xterm-js]], [[websocket-pty-bridge]] (still pending from prior sessions)
+- Contradictions: none
+- Pages touched: 6 created + 1 updated + 2 meta = 9
+
 ## [2026-05-20] ingest | Handshake backup files — claude-handshake ship + RUDRA completion
 - Sources: `~/.claude/backups/handshakes/` — 8 named backup files read and evaluated
 - New sources created: [[2026-05-13-claude-handshake-github-ship]], [[2026-05-19-rudra-completion]]
