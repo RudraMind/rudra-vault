@@ -80,9 +80,19 @@ GitHub: https://github.com/RudraMind/claude-web-terminal (master, 10 commits, HE
 | Shell injection | `SHELLS` map only, never client input |
 | Zombie processes | PTY killed on WS close + SIGINT/SIGTERM |
 
+## Planned Features (v2 Backlog)
+
+Shell indicators + terminal search (Ctrl+F) + clear button — 10-task design spec completed 2026-05-21, NOT yet implemented. See [[2026-05-21-rudra-ui-shell-indicators-design]].
+
+Key design decisions pre-made:
+- Keyboard intercept: `term.attachCustomKeyEventHandler` per Tab (not `document.addEventListener`)
+- Search re-run on tab switch: in `TabManager.activateTab` (not `updateStatusBar`)
+- Clear button: icon-only `⌫`, no text label (status bar 28px)
+
 ## Progress Log
 
 - 2026-05-19: v1 complete. server.js + 3 frontend files + README. npm start working, both tab types confirmed live.
 - 2026-05-19: RUDRA UI redesign spec read, 10-phase rewrite implemented.
 - 2026-05-19: RUDRA complete — 588-line app.js, code review + security audit passed, pushed to GitHub (10 commits).
 - 2026-05-19: User confirmed RUDRA working in browser. Project complete.
+- 2026-05-21: Shell indicators + search + clear feature designed. Spec v2 approved. 10-task plan written. Not yet implemented.

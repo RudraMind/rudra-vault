@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-05-27] ingest | Handshake backups — CWS submission + Chrome extension build sessions
+- Sources: 5 new session handshakes from 2026-05-21 through 2026-05-27
+- Created sources: [[2026-05-21-rudra-ui-shell-indicators-design]], [[2026-05-22-chrome-extension-spikes]], [[2026-05-22-claude-code-workspace-production-build]], [[2026-05-26-chrome-web-store-submission]], [[2026-05-27-cws-publisher-email-fix]]
+- Created concepts: [[xterm-js]] (was stub), [[chrome-web-store-submission]], [[mv3-csp-local-bundle]]
+- Updated: [[claude-code-chrome]] — CWS submission status, publisher email, progress log through 2026-05-27
+- Updated: [[claude-web-terminal]] — v2 shell indicators plan added
+- Contradictions: [[2026-05-27-cws-publisher-email-fix]] flags CLAUDE.md has wrong email (`rajcherryforever@gmail.com`) — correct is `aiforrudraraju@gmail.com`
+- Pages touched: 5 sources + 3 concepts created, 2 projects updated, 2 meta = 12
+
 ## [2026-05-23] ingest | Claude Code Chrome Extension — Post-Mortem + Build Spec
 - Sources: `raw/articles/2026-05-23-claude-code-chrome-post-mortem.md`, `raw/articles/2026-05-23-chrome-extension-nmh-pty-build-spec.md`
 - Created: [[claude-code-chrome]], [[native-messaging-host]], [[chrome-sw-per-panel-routing]], [[pty-killed-flag-pattern]], [[2026-05-23-claude-code-chrome-post-mortem]], [[2026-05-23-chrome-extension-nmh-pty-build-spec]]

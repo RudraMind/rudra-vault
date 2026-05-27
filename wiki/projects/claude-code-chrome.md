@@ -2,9 +2,9 @@
 type: project
 tags: [chrome-extension, nmh, pty, claude-code, xterm-js, open-source, rudramind, windows]
 created: 2026-05-23
-updated: 2026-05-23
-sources: [2026-05-23-claude-code-chrome-post-mortem, 2026-05-23-chrome-extension-nmh-pty-build-spec]
-related: [claude-web-terminal, native-messaging-host, node-pty, rudramind]
+updated: 2026-05-27
+sources: [2026-05-22-chrome-extension-spikes, 2026-05-22-claude-code-workspace-production-build, 2026-05-23-claude-code-chrome-post-mortem, 2026-05-23-chrome-extension-nmh-pty-build-spec, 2026-05-26-chrome-web-store-submission, 2026-05-27-cws-publisher-email-fix]
+related: [claude-web-terminal, native-messaging-host, node-pty, rudramind, chrome-web-store-submission]
 disambiguates: ""
 archived: ""
 superseded_by: ""
@@ -12,7 +12,7 @@ superseded_by: ""
 
 # claude-code-chrome
 
-**Status:** MVP v1 complete, shipped 2026-05-23
+**Status:** MVP v1 submitted to Chrome Web Store 2026-05-27 — pending review
 **GitHub:** https://github.com/RudraMind/claude-code-chrome
 **Extension ID:** `cjcfkdoemhgfpifpoglefahmllomlldi`
 
@@ -95,7 +95,17 @@ Native Messaging Host (Node.js)
 - [[node-pty]] — PTY module, Windows cmd.exe workaround
 - [[pty-killed-flag-pattern]] — prevents onExit race on intentional kill
 
+## Chrome Web Store
+
+- **Status:** Pending review (submitted 2026-05-27)
+- **Publisher:** aiforrudraraju@gmail.com
+- **Privacy URL:** https://rudramind.github.io/claude-code-chrome/privacy (live)
+- **Rejection prep:** nativeMessaging justification ready — "companion spawns Claude Code CLI in local PTY, no external data"
+
 ## Progress Log
 
+- 2026-05-22: Architecture validated via spikes 0/2/3 (folder picker, NMH streaming, xterm.js).
 - 2026-05-22: All 17 source files written from spec. 4-agent review caught 11 bugs. PTY binary verified. Extension loaded in Chrome. Companion detects Claude, folder picker works.
 - 2026-05-23: Live testing — 4 more bugs found and fixed (multi-panel crosstalk, claude_missing broadcast, ↺ UX). Full audit passed. Committed + pushed to GitHub.
+- 2026-05-26: README rewrite, privacy.md + GitHub Pages, new icons (Anthropic ✳ + teal `>_`), removed unused `storage`+`tabs` permissions. 3-agent review. Store listing filled.
+- 2026-05-27: Publisher email corrected (aiforrudraraju@gmail.com). Submitted for review. Privacy URL confirmed live.
