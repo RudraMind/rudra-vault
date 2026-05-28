@@ -77,3 +77,4 @@ FitAddon fires resize immediately on init → shows `[Resized to 2x1]` artifact 
 
 - [[claude-web-terminal]] — loads xterm.js from jsDelivr CDN, `@xterm/xterm@5.3.0`
 - [[claude-code-chrome]] — bundles xterm.js locally (MV3 CSP requirement)
+
