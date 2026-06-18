@@ -2,9 +2,9 @@
 type: entity
 tags: [github, open-source, identity, rudramind]
 created: 2026-05-14
-updated: 2026-05-19
-sources: [2026-05-14-rudramind-pages-runbook, 2026-05-13-claude-handshake-github-ship, 2026-05-19-rudra-completion]
-related: [claude-handshake-project, rudramind-pages-hub, claude-web-terminal]
+updated: 2026-06-17
+sources: [2026-06-17-raj-portfolio-deploy, 2026-05-14-rudramind-pages-runbook, 2026-05-13-claude-handshake-github-ship, 2026-05-19-rudra-completion]
+related: [claude-handshake-project, rudramind-pages-hub, claude-web-terminal, raj-portfolio]
 disambiguates: ""
 archived: ""
 superseded_by: ""
@@ -22,7 +22,7 @@ GitHub username `RudraMind` (previously `Rudrafuture`, previously `Rudraraju` â€
 
 - GitHub org: https://github.com/RudraMind
 - Pages install hub: https://rudramind.github.io (branch: `main`)
-- Published repos: `claude-handshake` (master), `claude-web-terminal` (master)
+- Published repos: `claude-handshake` (master), `claude-web-terminal` (master), `portfolio` (main, **private** â€” personal site, branch `main`)
 - Install command convention: `curl -fsSL https://rudramind.github.io/<tool> | bash`
 - Skill repos use `master` branch; Pages hub uses `main` â€” never mix
 - `gh` CLI not in bash PATH on Windows â€” use full path `/c/Program Files/GitHub CLI/gh.exe`
@@ -36,10 +36,12 @@ GitHub username `RudraMind` (previously `Rudrafuture`, previously `Rudraraju` â€
 
 - Publishes [[claude-handshake-project]]
 - Publishes [[claude-web-terminal]]
+- Publishes [[raj-portfolio]] (private repo)
 - Routes installs via [[rudramind-pages-hub]]
 
 ## Sources
 
+- [[wiki/sources/2026-06-17-raj-portfolio-deploy]]
 - [[wiki/sources/2026-05-14-rudramind-pages-runbook]]
 - [[wiki/sources/2026-05-13-claude-handshake-github-ship]]
 - [[wiki/sources/2026-05-19-rudra-completion]]

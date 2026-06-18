@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-06-17] ingest | Raj Portfolio — v3 Deploy Prep & Frontend Pass
+- Source: `raw/inbox/` (from `Raj-website/Personal/CHANGELOG.md`) → `raw/articles/2026-06-17-raj-portfolio-deploy.md`
+- Created: [[raj-portfolio]] (project), [[2026-06-17-raj-portfolio-deploy]] (source)
+- Updated: [[rudramind]] — added `portfolio` (private repo), new source + connection
+- Stubs (not created): [[cloudflare-pages]]
+- Contradictions: none
+- Pages touched: 3
+
 ## [2026-05-27] ingest | Handshake backups — CWS submission + Chrome extension build sessions
 - Sources: 5 new session handshakes from 2026-05-21 through 2026-05-27
 - Created sources: [[2026-05-21-rudra-ui-shell-indicators-design]], [[2026-05-22-chrome-extension-spikes]], [[2026-05-22-claude-code-workspace-production-build]], [[2026-05-26-chrome-web-store-submission]], [[2026-05-27-cws-publisher-email-fix]]

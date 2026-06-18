@@ -1,10 +1,10 @@
 # Wiki Index
-_Last updated: 2026-05-27 | Pages: 36 | Sources ingested: 14_
+_Last updated: 2026-06-17 | Pages: 38 | Sources ingested: 15_
 
 ## Entities
 | Page | Summary | Tags | Sources |
 |------|---------|------|---------|
-| [[rudramind]] | GitHub org + personal brand for Raj's open-source AI tooling | github, identity | [[2026-05-14-rudramind-pages-runbook]], [[2026-05-13-claude-handshake-github-ship]], [[2026-05-19-rudra-completion]] |
+| [[rudramind]] | GitHub org + personal brand for Raj's open-source AI tooling | github, identity | [[2026-06-17-raj-portfolio-deploy]], [[2026-05-14-rudramind-pages-runbook]], [[2026-05-13-claude-handshake-github-ship]], [[2026-05-19-rudra-completion]] |
 
 ## Concepts
 | Page | Summary | Tags | Sources |
@@ -29,6 +29,7 @@ _Last updated: 2026-05-27 | Pages: 36 | Sources ingested: 14_
 | [[rudramind-pages-hub]] | GitHub Pages install hub at rudramind.github.io — routes clean install URLs to skill repos | github-pages, install-hub, rudramind | [[2026-05-14-rudramind-pages-runbook]] |
 | [[claude-web-terminal]] | Browser-based real PTY terminal (CMD + Claude Code), RUDRA UI — complete; v2 shell indicators designed | node.js, terminal, browser, pty, open-source, rudramind | [[2026-05-19-claude-web-terminal-design]], [[2026-05-19-rudra-ui-redesign-plan]], [[2026-05-19-rudra-completion]], [[2026-05-21-rudra-ui-shell-indicators-design]] |
 | [[claude-code-chrome]] | Chrome MV3 extension running Claude Code CLI via NMH + node-pty + xterm.js — submitted to CWS 2026-05-27 | chrome-extension, nmh, pty, claude-code, open-source, rudramind | [[2026-05-22-chrome-extension-spikes]], [[2026-05-22-claude-code-workspace-production-build]], [[2026-05-23-claude-code-chrome-post-mortem]], [[2026-05-23-chrome-extension-nmh-pty-build-spec]], [[2026-05-26-chrome-web-store-submission]], [[2026-05-27-cws-publisher-email-fix]] |
+| [[raj-portfolio]] | Personal portfolio static React SPA → Cloudflare Pages via private RudraMind/portfolio; v3 frontend pass shipped | portfolio, cloudflare-pages, frontend, react, rudramind | [[2026-06-17-raj-portfolio-deploy]] |
 
 ## Sources
 | Page | Summary | Date | |
@@ -48,6 +49,7 @@ _Last updated: 2026-05-27 | Pages: 36 | Sources ingested: 14_
 | [[2026-05-23-chrome-extension-nmh-pty-build-spec]] | Canonical reusable build spec for Chrome NMH+PTY extensions — checklists, patterns, platform quirks | 2026-05-23 | |
 | [[2026-05-26-chrome-web-store-submission]] | CWS submission prep: README, privacy.md, icons, removed unused permissions, store listing, submitted | 2026-05-26 | |
 | [[2026-05-27-cws-publisher-email-fix]] | Publisher email corrected (aiforrudraraju@gmail.com), submission confirmed, CWS reminder hook added | 2026-05-27 | |
+| [[2026-06-17-raj-portfolio-deploy]] | Portfolio v3 deploy prep: Claude Design frontend pass incorporated, dup-bar fix, Cloudflare-ready, canonical repo = Personal/ | 2026-06-17 | |
 
 ## Queries
 | Page | Summary | Date | |
