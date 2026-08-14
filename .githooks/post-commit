@@ -1,0 +1,16 @@
+#!/bin/sh
+# Regenerate the RUDRA//OS graph snapshot after any commit touching .md files.
+# Deliberately only writes vault.json — re-baking rudra-os.html stays a Claude Code
+# step, because a hook silently rewriting a large HTML file makes confusing diffs.
+
+if git diff-tree --no-commit-id --name-only -r HEAD | grep -q '\.md$'; then
+  echo "[rudra] markdown changed - regenerating vault graph..."
+  node "/c/Users/conne/Downloads/vault-graph.js" \
+       "C:/Users/conne/docs/Vault/Rudra" \
+       > "/c/Users/conne/Downloads/vault.json"
+  if [ $? -eq 0 ]; then
+    echo "[rudra] vault.json updated - re-bake into rudra-os.html when convenient"
+  else
+    echo "[rudra] WARNING: export failed, vault.json may be stale" >&2
+  fi
+fi

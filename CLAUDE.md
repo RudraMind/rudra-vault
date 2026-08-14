@@ -120,3 +120,116 @@ superseded_by: ""
 ## Templates Location
 
 `meta/templates/entity.md`, `concept.md`, `source.md`, `query.md`, `project.md`
+
+---
+
+## RULE: Regenerate the RUDRA//OS graph on every vault push
+
+This vault is the data source for `rudra-os.html`, a browser desktop whose wallpaper
+is a live force-graph of these notes. The OS reads a **baked-in JSON snapshot**, not
+the vault directly — so the snapshot goes stale the moment notes change.
+
+**Whenever notes are committed or pushed from this vault, run this pipeline. Do not
+wait to be asked.**
+
+### Trigger conditions
+
+Run the pipeline if ANY of these are true:
+
+- The user asks to commit, push, or sync this vault
+- The user says notes were added, renamed, deleted, or reorganized
+- `git status` shows staged or committed changes to any `.md` file
+- The user opens a session here and `vault.json` is older than the newest `.md` file
+
+Do NOT run it for: edits confined to a single note's body text with no link changes,
+`.obsidian/` config changes, or changes to non-markdown files only.
+
+### Pipeline
+
+**1. Export — from bash, NOT PowerShell**
+
+```bash
+cd /c/Users/conne/Downloads
+node vault-graph.js "C:/Users/conne/docs/Vault/Rudra" > vault.json
+```
+
+PowerShell's `>` redirect writes **UTF-16LE with a BOM**, which the browser cannot
+parse once baked. Use Git Bash. If you must use PowerShell:
+`node vault-graph.js "<path>" | Out-File -Encoding utf8 vault.json`
+
+Always export from `C:/Users/conne/docs/Vault/Rudra` — the full vault (~56 notes after
+filtering). Never export from `C:/Users/conne/Downloads/rudra-vault` (stale partial
+clone, 47 notes, missing `docs/` and `raw/`).
+
+**2. Validate** — abort and report if any check fails:
+
+- first byte is `{` — not a BOM (`ff fe` or `ef bb bf`)
+- parses as valid JSON
+- non-empty `nodes` and `links` arrays
+- every node has `id`, `label`, `group`
+- stub nodes have `stub: true`; real notes have no `stub` key
+- zero dangling links (every `source`/`target` maps to an existing node id)
+- zero duplicate node ids
+- node count did not drop by more than 20% versus the previous `vault.json` —
+  a large unexplained drop usually means a wrong path or a broken walk. Report and
+  wait for confirmation rather than silently overwriting.
+
+**3. Re-bake into the OS**
+
+Edit `C:\Users\conne\Downloads\rudra-os.html`:
+
+- Find the `<script id="vaultData" type="application/json">` block
+- Replace its entire contents with the new minified `vault.json` (the exporter already
+  emits minified UTF-8)
+- Escape any literal `</script>` in the payload as `<\/script>` — still valid JSON,
+  and prevents the data block closing early
+- Change nothing else — not the `APPS` registry, not the physics, not the icons, not
+  the CSS
+- The `<script id="vaultData">` block must sit immediately before the main `<script>`
+
+If the `vaultData` block does not exist, the OS has not been wired yet — say so and
+stop, rather than guessing where to insert it.
+
+**4. Commit both**
+
+```bash
+cd /c/Users/conne/docs/Vault/Rudra
+git add -A
+git commit -m "notes: <short description of what changed>"
+git push
+```
+
+`rudra-os.html` lives in `Downloads`, outside any repo — it is not version controlled.
+Nothing to commit for it; the bake is a local file edit only.
+
+**5. Report**
+
+Print a short table: notes / stubs / nodes / links, plus the delta versus the previous
+run. Flag anything unexpected — a hub that lost most of its links, a folder that
+vanished, a spike in stub count.
+
+### Exclusions (implemented in vault-graph.js)
+
+The exporter drops noise. If new noise appears, extend the lists in that script rather
+than filtering downstream:
+
+- Folders: `templates`, `daily`, `journal`, `inbox`, `attachments`, plus `.obsidian`,
+  `.git`, `.trash` and other infra dirs
+- Filenames: `YYYY-MM-DD*`, `YYYY-W##*`, `Untitled*`, `Draft*`
+- Placeholder stubs: `{{...}}`, `<%...%>`, and literals like `yyyy-mm-dd-slug`,
+  `entity-name`, `page`, `title`, `slug`
+
+**Critical:** the `YYYY-MM-DD*` rule is scoped by `DATE_RULE_EXEMPT_PREFIXES`
+(`wiki/sources/`, `raw/articles/`, `raw/notes/`, `docs/`). Those folders use dated
+filenames as their **naming convention**, not as daily notes. Without the exemption the
+rule deletes 25 real source pages and half the vault. Do not remove it. If you add a
+folder that names files by date, add it to that list.
+
+### Notes
+
+- `docs/` and `raw/` are gitignored, so the GitHub remote is **not** a complete backup.
+  `raw/` in particular exists on one disk only.
+- Stub nodes (unresolved `[[wikilinks]]`) are intentional — they render as hollow ghost
+  nodes and show which pages are planned but unwritten. Do not remove them.
+- `rudra-os.html` has no `VAULT_URL`, no `loadRemote()`, and no `◌ Stubs` toggle in the
+  current build. Do not write pipeline steps that assume they exist.
