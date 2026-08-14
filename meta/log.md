@@ -7,6 +7,13 @@
 - Stubs (not created): [[homepulse]], [[resume-jd-tailor]], [[hermes-agent]], [[rudra-quartz]]
 - Contradictions: none
 - Pages touched: 6
+- **Correction (same day):** initial write used an incomplete survey — `homefinance` and
+  `homepulse` sizes were still pending. Corrected totals: footprint **2.45 GB** (not
+  1.47 GB); `homefinance` **995 MB / 40%** is the largest folder, ahead of `hermes-agent`
+  **781 MB / 31%**; `homepulse` 47 MB. Claim 4 and the summary in
+  [[2026-08-13-claude-projects-inventory]] rewritten; [[homefinance]] gained the size fact.
+  `raw/articles/2026-08-13-claude-projects-inventory.md` left untouched per Hard Rule 1 —
+  it still shows the pre-correction 1.47 GB figure and its own "53%" observation.
 
 ## [2026-06-17] ingest | Raj Portfolio — v3 Deploy Prep & Frontend Pass
 - Source: `raw/inbox/` (from `Raj-website/Personal/CHANGELOG.md`) → `raw/articles/2026-06-17-raj-portfolio-deploy.md`

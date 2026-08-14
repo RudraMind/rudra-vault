@@ -24,7 +24,8 @@ the actual house, running locally on `localhost:3000`.
 ## Key Facts
 
 - **Path:** `C:\Users\conne\.claude\projects\homefinance` — 108 files excluding
-  `node_modules` / `.next`.
+  `node_modules` / `.next`. **On disk it is 995 MB** — the largest folder under
+  `.claude/projects/`, ~40% of that tree, almost entirely `node_modules` + `.next`.
 - **Port 3000**, started with `npm run dev`. Global CLAUDE.md sets it to auto-start each
   session until ~2026-10.
 - **No own git repo** — inherits `RudraMind/claude-lab` from the parent `~/.claude`.

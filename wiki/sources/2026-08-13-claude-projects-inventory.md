@@ -21,8 +21,8 @@ superseded_by: ""
 Full survey of the 18 folders under `C:\Users\conne\.claude\projects\` — size, file
 count, git ownership and last-touched date. The directory turns out to hold two
 unrelated kinds of thing: seven auto-generated Claude Code session transcript stores
-and eleven real working project directories. Combined footprint ≈ 1.47 GB, of which a
-single third-party clone accounts for over half.
+and eleven real working project directories. Combined footprint ≈ 2.45 GB, of which two
+folders — one of them a third-party clone — account for 71%.
 
 ## Key Claims
 
@@ -34,8 +34,10 @@ single third-party clone accounts for over half.
 3. **Every other folder falsely reports `RudraMind/claude-lab.git`** — `git -C` walks up
    to the parent `~/.claude` repo. Any inventory that trusts `git remote` without
    checking for a local `.git` will mis-attribute 14 folders.
-4. **`hermes-agent` is 781 MB / 13,153 files — 53% of the entire footprint** — and is a
-   third-party clone of `nousresearch/hermes-agent`, not the user's own work.
+4. **Two folders hold 71% of the 2.45 GB:** `homefinance` at 995 MB (40%, mostly
+   `node_modules` + `.next`) and `hermes-agent` at 781 MB / 13,153 files (31%) — the
+   latter a third-party clone of `nousresearch/hermes-agent`, not the user's own work.
+   `homepulse` adds a further 47 MB.
 5. **Nested repos exist one level down:** `Raj-website/Personal` and
    `Raj-website/Personal_old2` both point at `RudraMind/portfolio.git`;
    `claude-vault/rudra-quartz` points at `RudraMind/rudra-quartz.git`.
