@@ -2,8 +2,8 @@
 type: project
 tags: [chrome-extension, nmh, pty, claude-code, xterm-js, open-source, rudramind, windows]
 created: 2026-05-23
-updated: 2026-05-27
-sources: [2026-05-22-chrome-extension-spikes, 2026-05-22-claude-code-workspace-production-build, 2026-05-23-claude-code-chrome-post-mortem, 2026-05-23-chrome-extension-nmh-pty-build-spec, 2026-05-26-chrome-web-store-submission, 2026-05-27-cws-publisher-email-fix]
+updated: 2026-08-13
+sources: [2026-08-13-claude-projects-inventory, 2026-05-22-chrome-extension-spikes, 2026-05-22-claude-code-workspace-production-build, 2026-05-23-claude-code-chrome-post-mortem, 2026-05-23-chrome-extension-nmh-pty-build-spec, 2026-05-26-chrome-web-store-submission, 2026-05-27-cws-publisher-email-fix]
 related: [claude-web-terminal, native-messaging-host, node-pty, rudramind, chrome-web-store-submission]
 disambiguates: ""
 archived: ""

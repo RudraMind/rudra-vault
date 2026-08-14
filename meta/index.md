@@ -1,5 +1,5 @@
 # Wiki Index
-_Last updated: 2026-06-17 | Pages: 38 | Sources ingested: 15_
+_Last updated: 2026-08-13 | Pages: 41 | Sources ingested: 16_
 
 ## Entities
 | Page | Summary | Tags | Sources |
@@ -13,6 +13,7 @@ _Last updated: 2026-06-17 | Pages: 38 | Sources ingested: 15_
 | [[context-monitor]] | Auto-warning system for Claude Code context window limits (60/65/70%) | claude-code, automation, hooks | [[2026-05-12-context-monitor]] |
 | [[context-recovery]] | Recovery-of-thought protocol: /handshake → /clear → /handshake upload | session-management, workflow | [[2026-05-12-context-monitor]] |
 | [[caveman-mode]] | Output style: terse, drop articles/filler/hedging, fragments OK | claude-code, tooling | [[2026-05-12-claude-md-guidelines]] |
+| [[claude-code-session-stores]] | ~/.claude/projects/<slugified-cwd>/ holds session .jsonl transcripts — only local record of past sessions; git remotes there are inherited false positives | claude-code, workspace, transcripts | [[2026-08-13-claude-projects-inventory]] |
 | [[github-pages-install-hub]] | Free GitHub Pages pattern serving clean install URLs for OSS tools | github-pages, install-scripts, devtools | [[2026-05-14-rudramind-pages-runbook]] |
 | [[node-pty]] | Node.js native module for real PTY processes — Windows needs cmd.exe /c for .cmd wrappers | node.js, terminal, pty, windows | [[2026-05-19-claude-web-terminal-design]], [[2026-05-23-claude-code-chrome-post-mortem]] |
 | [[native-messaging-host]] | Chrome NMH protocol: 4-byte LE framing, 1MB limit, 100KB chunk strategy, .bat launcher on Windows | chrome-extension, nmh, ipc | [[2026-05-22-chrome-extension-spikes]], [[2026-05-23-claude-code-chrome-post-mortem]], [[2026-05-23-chrome-extension-nmh-pty-build-spec]] |
@@ -29,7 +30,8 @@ _Last updated: 2026-06-17 | Pages: 38 | Sources ingested: 15_
 | [[rudramind-pages-hub]] | GitHub Pages install hub at rudramind.github.io — routes clean install URLs to skill repos | github-pages, install-hub, rudramind | [[2026-05-14-rudramind-pages-runbook]] |
 | [[claude-web-terminal]] | Browser-based real PTY terminal (CMD + Claude Code), RUDRA UI — complete; v2 shell indicators designed | node.js, terminal, browser, pty, open-source, rudramind | [[2026-05-19-claude-web-terminal-design]], [[2026-05-19-rudra-ui-redesign-plan]], [[2026-05-19-rudra-completion]], [[2026-05-21-rudra-ui-shell-indicators-design]] |
 | [[claude-code-chrome]] | Chrome MV3 extension running Claude Code CLI via NMH + node-pty + xterm.js — submitted to CWS 2026-05-27 | chrome-extension, nmh, pty, claude-code, open-source, rudramind | [[2026-05-22-chrome-extension-spikes]], [[2026-05-22-claude-code-workspace-production-build]], [[2026-05-23-claude-code-chrome-post-mortem]], [[2026-05-23-chrome-extension-nmh-pty-build-spec]], [[2026-05-26-chrome-web-store-submission]], [[2026-05-27-cws-publisher-email-fix]] |
-| [[raj-portfolio]] | Personal portfolio static React SPA → Cloudflare Pages via private RudraMind/portfolio; v3 frontend pass shipped | portfolio, cloudflare-pages, frontend, react, rudramind | [[2026-06-17-raj-portfolio-deploy]] |
+| [[raj-portfolio]] | Personal portfolio static React SPA → Cloudflare Pages via private RudraMind/portfolio; v3 frontend pass shipped | portfolio, cloudflare-pages, frontend, react, rudramind | [[2026-08-13-claude-projects-inventory]], [[2026-06-17-raj-portfolio-deploy]] |
+| [[homefinance]] | Next.js household dashboard on :3000 — bills/solar/water/cameras behind a 3D model of the real house; backyard plant panel | nextjs, dashboard, household, bills, three-js, personal | [[2026-08-13-claude-projects-inventory]] |
 
 ## Sources
 | Page | Summary | Date | |
@@ -50,6 +52,7 @@ _Last updated: 2026-06-17 | Pages: 38 | Sources ingested: 15_
 | [[2026-05-26-chrome-web-store-submission]] | CWS submission prep: README, privacy.md, icons, removed unused permissions, store listing, submitted | 2026-05-26 | |
 | [[2026-05-27-cws-publisher-email-fix]] | Publisher email corrected (aiforrudraraju@gmail.com), submission confirmed, CWS reminder hook added | 2026-05-27 | |
 | [[2026-06-17-raj-portfolio-deploy]] | Portfolio v3 deploy prep: Claude Design frontend pass incorporated, dup-bar fix, Cloudflare-ready, canonical repo = Personal/ | 2026-06-17 | |
+| [[2026-08-13-claude-projects-inventory]] | Survey of all 18 folders under .claude/projects — 7 session stores vs 11 real projects, 1.47 GB, only 4 own a .git | 2026-08-13 | |
 
 ## Queries
 | Page | Summary | Date | |

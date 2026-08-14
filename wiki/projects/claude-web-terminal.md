@@ -2,8 +2,8 @@
 type: project
 tags: [node.js, terminal, browser, pty, claude-code, open-source, rudramind]
 created: 2026-05-19
-updated: 2026-05-19
-sources: [2026-05-19-claude-web-terminal-design, 2026-05-19-rudra-ui-redesign-plan, 2026-05-19-rudra-completion]
+updated: 2026-08-13
+sources: [2026-08-13-claude-projects-inventory, 2026-05-19-claude-web-terminal-design, 2026-05-19-rudra-ui-redesign-plan, 2026-05-19-rudra-completion]
 related: [claude-handshake-project, rudramind-pages-hub, rudramind]
 disambiguates: ""
 archived: ""

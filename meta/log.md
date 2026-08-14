@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-08-13] ingest | Claude Projects Folder Inventory
+- Source: `raw/inbox/2026-08-13-claude-projects-inventory.md` → moved to `raw/articles/`
+- Created: [[2026-08-13-claude-projects-inventory]] (source), [[homefinance]] (project), [[claude-code-session-stores]] (concept)
+- Updated: [[raj-portfolio]] — added source, logged `Personal_old2` live remote finding; [[claude-code-chrome]] — added source; [[claude-web-terminal]] — added source
+- Stubs (not created): [[homepulse]], [[resume-jd-tailor]], [[hermes-agent]], [[rudra-quartz]]
+- Contradictions: none
+- Pages touched: 6
+
 ## [2026-06-17] ingest | Raj Portfolio — v3 Deploy Prep & Frontend Pass
 - Source: `raw/inbox/` (from `Raj-website/Personal/CHANGELOG.md`) → `raw/articles/2026-06-17-raj-portfolio-deploy.md`
 - Created: [[raj-portfolio]] (project), [[2026-06-17-raj-portfolio-deploy]] (source)

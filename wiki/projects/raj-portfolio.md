@@ -2,8 +2,8 @@
 type: project
 tags: [portfolio, cloudflare-pages, frontend, react, seo, rudramind]
 created: 2026-06-17
-updated: 2026-06-17
-sources: [2026-06-17-raj-portfolio-deploy]
+updated: 2026-08-13
+sources: [2026-08-13-claude-projects-inventory, 2026-06-17-raj-portfolio-deploy]
 related: [rudramind, cloudflare-pages]
 disambiguates: ""
 archived: ""
@@ -53,6 +53,10 @@ Preferred fix: have Claude Design export directly into `Personal/export/`.
 - 2026-06-17: v3 — incorporated Claude Design frontend pass (5 improvements + dup-bar
   fix + OG/canonical bonuses); mirrored into `Personal/export/`; committed + pushed
   (`8dc57d0`). Confirmed Cloudflare-ready.
+- 2026-08-13: Inventory confirmed HEAD still `8dc57d0` — no commits since v3. Folder
+  totals 13 MB / 115 files. **`Personal_old2` still carries a live `portfolio.git`
+  remote** — a second writable copy of the deploy source, not just a dead directory.
+  Served locally from `Personal/export/` on :8080 for review.
 
 ## Go-Live (post-domain, see `export/GO-LIVE.md`)
 
