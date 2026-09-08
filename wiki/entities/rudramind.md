@@ -2,9 +2,9 @@
 type: entity
 tags: [github, open-source, identity, rudramind]
 created: 2026-05-14
-updated: 2026-06-17
-sources: [2026-06-17-raj-portfolio-deploy, 2026-05-14-rudramind-pages-runbook, 2026-05-13-claude-handshake-github-ship, 2026-05-19-rudra-completion]
-related: [claude-handshake-project, rudramind-pages-hub, claude-web-terminal, raj-portfolio]
+updated: 2026-09-07
+sources: [2026-09-07-minime-electron-companion, 2026-06-17-raj-portfolio-deploy, 2026-05-14-rudramind-pages-runbook, 2026-05-13-claude-handshake-github-ship, 2026-05-19-rudra-completion]
+related: [claude-handshake-project, rudramind-pages-hub, claude-web-terminal, raj-portfolio, minime]
 disambiguates: ""
 archived: ""
 superseded_by: ""
@@ -22,7 +22,7 @@ GitHub username `RudraMind` (previously `Rudrafuture`, previously `Rudraraju` �
 
 - GitHub org: https://github.com/RudraMind
 - Pages install hub: https://rudramind.github.io (branch: `main`)
-- Published repos: `claude-handshake` (master), `claude-web-terminal` (master), `portfolio` (main, **private** — personal site, branch `main`)
+- Published repos: `claude-handshake` (master), `claude-web-terminal` (master), `portfolio` (main, **private** — personal site, branch `main`), `MiniMe` (main, **public** — desktop companion, created 2026-08-27, renamed from `Mini-Assistant` with GitHub redirecting the old URL)
 - Install command convention: `curl -fsSL https://rudramind.github.io/<tool> | bash`
 - Skill repos use `master` branch; Pages hub uses `main` — never mix
 - `gh` CLI not in bash PATH on Windows — use full path `/c/Program Files/GitHub CLI/gh.exe`
@@ -37,10 +37,12 @@ GitHub username `RudraMind` (previously `Rudrafuture`, previously `Rudraraju` �
 - Publishes [[claude-handshake-project]]
 - Publishes [[claude-web-terminal]]
 - Publishes [[raj-portfolio]] (private repo)
+- Publishes [[minime]] (public repo)
 - Routes installs via [[rudramind-pages-hub]]
 
 ## Sources
 
+- [[wiki/sources/2026-09-07-minime-electron-companion]]
 - [[wiki/sources/2026-06-17-raj-portfolio-deploy]]
 - [[wiki/sources/2026-05-14-rudramind-pages-runbook]]
 - [[wiki/sources/2026-05-13-claude-handshake-github-ship]]

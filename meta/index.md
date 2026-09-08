@@ -1,10 +1,10 @@
 # Wiki Index
-_Last updated: 2026-08-13 | Pages: 41 | Sources ingested: 16_
+_Last updated: 2026-09-07 | Pages: 43 | Sources ingested: 19_
 
 ## Entities
 | Page | Summary | Tags | Sources |
 |------|---------|------|---------|
-| [[rudramind]] | GitHub org + personal brand for Raj's open-source AI tooling | github, identity | [[2026-06-17-raj-portfolio-deploy]], [[2026-05-14-rudramind-pages-runbook]], [[2026-05-13-claude-handshake-github-ship]], [[2026-05-19-rudra-completion]] |
+| [[rudramind]] | GitHub org + personal brand for Raj's open-source AI tooling | github, identity | [[2026-09-07-minime-electron-companion]], [[2026-06-17-raj-portfolio-deploy]], [[2026-05-14-rudramind-pages-runbook]], [[2026-05-13-claude-handshake-github-ship]], [[2026-05-19-rudra-completion]] |
 
 ## Concepts
 | Page | Summary | Tags | Sources |
@@ -22,6 +22,9 @@ _Last updated: 2026-08-13 | Pages: 41 | Sources ingested: 16_
 | [[xterm-js]] | Browser terminal emulator — renders ANSI/PTY output in browser; must be bundled locally in MV3 extensions | terminal, browser, chrome-extension | [[2026-05-22-chrome-extension-spikes]], [[2026-05-22-claude-code-workspace-production-build]], [[2026-05-23-claude-code-chrome-post-mortem]] |
 | [[mv3-csp-local-bundle]] | MV3 CSP blocks CDN scripts — must bundle xterm.js and other libs locally | chrome-extension, mv3, csp | [[2026-05-22-chrome-extension-spikes]], [[2026-05-22-claude-code-workspace-production-build]] |
 | [[chrome-web-store-submission]] | CWS submission process: permissions hygiene, privacy policy, nativeMessaging justification, review timeline | chrome-extension, publishing | [[2026-05-26-chrome-web-store-submission]], [[2026-05-27-cws-publisher-email-fix]] |
+| [[quartz-v5]] | Static site generator publishing Obsidian vaults as linked pages with a D3 graph — YAML config, plugins fetched at build time | quartz, obsidian, static-site, github-pages | [[2026-05-28-quartz-vault-publisher-build]] |
+| [[sprite-sheet-masking]] | Border flood-fill + closing beats colour distance; tolerances are per-sheet (20/25/10); shadows separate geometrically, not by colour | sprite-sheets, image-processing, sharp, alpha-masking | [[2026-09-07-minime-electron-companion]] |
+| [[semantic-animation-mapping]] | State machine emits animation meanings; each character maps them to its own art with an idle fallback — 9-frame and 31-frame characters share one behaviour layer | architecture, state-machine, animation, pattern | [[2026-09-07-minime-electron-companion]] |
 
 ## Projects
 | Page | Summary | Tags | Sources |
@@ -32,6 +35,7 @@ _Last updated: 2026-08-13 | Pages: 41 | Sources ingested: 16_
 | [[claude-code-chrome]] | Chrome MV3 extension running Claude Code CLI via NMH + node-pty + xterm.js — submitted to CWS 2026-05-27 | chrome-extension, nmh, pty, claude-code, open-source, rudramind | [[2026-05-22-chrome-extension-spikes]], [[2026-05-22-claude-code-workspace-production-build]], [[2026-05-23-claude-code-chrome-post-mortem]], [[2026-05-23-chrome-extension-nmh-pty-build-spec]], [[2026-05-26-chrome-web-store-submission]], [[2026-05-27-cws-publisher-email-fix]] |
 | [[raj-portfolio]] | Personal portfolio static React SPA → Cloudflare Pages via private RudraMind/portfolio; v3 frontend pass shipped | portfolio, cloudflare-pages, frontend, react, rudramind | [[2026-08-13-claude-projects-inventory]], [[2026-06-17-raj-portfolio-deploy]] |
 | [[homefinance]] | Next.js household dashboard on :3000 — bills/solar/water/cameras behind a 3D model of the real house; backyard plant panel | nextjs, dashboard, household, bills, three-js, personal | [[2026-08-13-claude-projects-inventory]] |
+| [[minime]] | Pixel-art Electron desktop companion for Windows, public at RudraMind/MiniMe — free-roam 2D, stretch/water nudges, focus sessions, 5 characters; v1.1.0 shipped, v1.2.0 pending | electron, windows, desktop-app, pixel-art, open-source, rudramind | [[2026-09-07-minime-electron-companion]] |
 
 ## Sources
 | Page | Summary | Date | |
@@ -53,6 +57,8 @@ _Last updated: 2026-08-13 | Pages: 41 | Sources ingested: 16_
 | [[2026-05-27-cws-publisher-email-fix]] | Publisher email corrected (aiforrudraraju@gmail.com), submission confirmed, CWS reminder hook added | 2026-05-27 | |
 | [[2026-06-17-raj-portfolio-deploy]] | Portfolio v3 deploy prep: Claude Design frontend pass incorporated, dup-bar fix, Cloudflare-ready, canonical repo = Personal/ | 2026-06-17 | |
 | [[2026-08-13-claude-projects-inventory]] | Survey of all 18 folders under .claude/projects — 7 session stores vs 11 real projects, 1.47 GB, only 4 own a .git | 2026-08-13 | |
+| [[2026-05-28-quartz-vault-publisher-build]] | Quartz v5 vault publisher build session — GitHub Actions cross-repo dispatch, Pages deploy | 2026-05-28 | |
+| [[2026-09-07-minime-electron-companion]] | MiniMe build-to-ship capture: architecture, 23 root-caused failures across art pipeline / state machine / packaging, decisions, open v1.2.0 gap | 2026-09-07 | |
 
 ## Queries
 | Page | Summary | Date | |

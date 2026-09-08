@@ -1,5 +1,27 @@
 # Wiki Log
 
+## [2026-09-07] ingest | MiniMe — Electron Desktop Companion, Build to Ship
+- Mode: **capture** — inbox was empty; material gathered from
+  `MiniMe/pixelpal/HANDSHAKE.md` (written 2026-09-03) and re-verified against git, the
+  working tree and the GitHub API on 2026-09-07, then written to
+  `raw/inbox/2026-09-07-minime-electron-companion.md`
+- Source: `raw/inbox/2026-09-07-minime-electron-companion.md` → moved to `raw/articles/`
+- Created: [[2026-09-07-minime-electron-companion]] (source), [[minime]] (project),
+  [[sprite-sheet-masking]] (concept), [[semantic-animation-mapping]] (concept)
+- Updated: [[rudramind]] — added `MiniMe` to published repos, added source and relation
+- Stubs (not created): [[electron-transparent-click-through-window]],
+  [[electron-builder-windows-symlink]], [[body-doubling]]
+- Contradictions: none inside the vault. Recorded on [[minime]]: the GitHub repo
+  description still says the companion "walks your screen edge", superseded by the
+  free-roam 2D rewrite; and the published v1.1.0 installer predates four of the five
+  characters the README advertises.
+- **Index repair:** [[quartz-v5]] and [[2026-05-28-quartz-vault-publisher-build]] existed
+  on disk but had never been added to `meta/index.md` (from the 2026-05-28 ingest). Rows
+  added. Header counts corrected to **43 pages / 19 sources**, now matching disk exactly
+  (43 files under `wiki/`, 43 index rows, 19 files in `wiki/sources/`). The old header
+  read 41/16 and had been drifting since before this ingest.
+- Pages touched: 7
+
 ## [2026-08-13] ingest | Claude Projects Folder Inventory
 - Source: `raw/inbox/2026-08-13-claude-projects-inventory.md` → moved to `raw/articles/`
 - Created: [[2026-08-13-claude-projects-inventory]] (source), [[homefinance]] (project), [[claude-code-session-stores]] (concept)
