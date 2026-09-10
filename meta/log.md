@@ -1,5 +1,54 @@
 # Wiki Log
 
+## [2026-09-09] ingest | Repo Inventory and gh Tooling Audit
+- Mode: **capture** — inbox was empty; material gathered live on 2026-09-09 from the
+  filesystem, 26 local clones and the GitHub API, then written to
+  `raw/inbox/2026-09-09-repo-inventory-and-gh-tooling-audit.md`
+- Source: `raw/inbox/2026-09-09-repo-inventory-and-gh-tooling-audit.md` → moved to
+  `raw/articles/`
+- Origin: a request to "find trinket". Nothing named trinket exists — verified 7 ways
+  (profile `find` to depth 6; `git log --all --grep` / `branch -a` / `stash list` over
+  26 clones; GitHub tree API across 12 non-empty repos = 1,401 files, `truncated=false`
+  on every call; `Temp-to-hold` empty via HTTP 409; `--depth 1` clone + `grep` of MiniMe;
+  `gh gist list` = 0 gists; `gh search commits`). The search produced the inventory.
+- Created: [[2026-09-09-repo-inventory-and-gh-tooling-audit]] (source),
+  [[gh-code-search-false-negative]] (concept)
+- Updated: [[rudramind]] — two claims superseded, both moved to `### Historical` with
+  dates; new source listed first; repo roster expanded to all 13
+- Stubs (not created): none new
+- Contradictions:
+  - ⚠️ [[rudramind]] said "GitHub organization". `gh api user` → `"type":"User"`,
+    id 282997122; `gh api user/orgs` → empty. It is a personal account. Flagged on both
+    the entity and the source page.
+  - ⚠️ [[rudramind]] said "`gh` CLI not in bash PATH on Windows — use full path".
+    `which gh` → `/c/Program Files/GitHub CLI/gh`. Every bare `gh` call succeeded.
+- **`gh search code` discarded as evidence.** Its positive control failed: `xterm` in
+  `RudraMind/claude-code-chrome` → 0 hits, and `search/code` API `total_count: 0`, while
+  global search for `node-pty` works. These repos are not in GitHub's code-search index.
+  `gh search repos` and `gh search commits` passed their controls and were kept.
+- **New fact, not a vault contradiction:** `gh auth status` reports `Rudrafuture` while
+  the API resolves to `RudraMind`. Root cause read from
+  `AppData/Roaming/GitHub CLI/hosts.yml` — it still carries `user: Rudrafuture` from the
+  2026-05-14 rename. Stale for ~4 months; token itself is valid.
+- **Reported, not fixed — `$VAULT/CLAUDE.md` is stale.** All four RUDRA//OS pipeline
+  paths it mandates are missing: `Downloads/{vault-graph.js, rudra-os.html, vault.json,
+  rudra-vault}`. Canonical copy is now `C:/Users/conne/Rudra/Rudra-OS/` (`vault.json`
+  49,232 bytes, mtime 2026-09-07 21:49); a diverged copy sits in `rudra-suite/Rudra-OS/`
+  (mtime 2026-08-19, `diff -q` differs on `vault-graph.js` and `rudra-os.html`); the
+  stale partial clone is now `Rudra/_archive/rudra-vault-partial-clone`. The doc's claim
+  that `rudra-os.html` is "outside any repo… not version controlled" is also false now —
+  `rudra-suite` is a clone of `RudraMind/rudra-suite`. Left uncorrected: that file is the
+  authoritative rules doc and rewriting it was out of scope for this ingest.
+- **Graph regen NOT run, no commit made.** The pipeline trigger is a commit or push; this
+  ingest did neither. Regeneration is now due — `Rudra/Rudra-OS/vault.json` (2026-09-07
+  21:49) is older than the `.md` files written today. The vault tree also carries
+  unrelated in-progress work (` M .githooks/post-commit`, ` M .gitignore`,
+  ` M meta/hooks/git-commit.ps1`, `?? .gitattributes`, `?? Welcome.md`), so a blanket
+  `git add -A` would sweep it into an ingest commit. Left for the user to call.
+- Counts verified against disk after writing: 45 files under `wiki/`, 45 index rows,
+  20 files in `wiki/sources/`, `raw/inbox/` empty. Header updated 43/19 → 45/20.
+- Pages touched: 3
+
 ## [2026-09-07] ingest | MiniMe — Electron Desktop Companion, Build to Ship
 - Mode: **capture** — inbox was empty; material gathered from
   `MiniMe/pixelpal/HANDSHAKE.md` (written 2026-09-03) and re-verified against git, the

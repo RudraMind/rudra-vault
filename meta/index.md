@@ -1,10 +1,10 @@
 # Wiki Index
-_Last updated: 2026-09-07 | Pages: 43 | Sources ingested: 19_
+_Last updated: 2026-09-09 | Pages: 45 | Sources ingested: 20_
 
 ## Entities
 | Page | Summary | Tags | Sources |
 |------|---------|------|---------|
-| [[rudramind]] | GitHub org + personal brand for Raj's open-source AI tooling | github, identity | [[2026-09-07-minime-electron-companion]], [[2026-06-17-raj-portfolio-deploy]], [[2026-05-14-rudramind-pages-runbook]], [[2026-05-13-claude-handshake-github-ship]], [[2026-05-19-rudra-completion]] |
+| [[rudramind]] | Personal GitHub **user** account (not an org) + brand for Raj's open-source AI tooling — 13 repos, 1,401 files | github, identity | [[2026-09-09-repo-inventory-and-gh-tooling-audit]], [[2026-09-07-minime-electron-companion]], [[2026-06-17-raj-portfolio-deploy]], [[2026-05-14-rudramind-pages-runbook]], [[2026-05-13-claude-handshake-github-ship]], [[2026-05-19-rudra-completion]] |
 
 ## Concepts
 | Page | Summary | Tags | Sources |
@@ -25,6 +25,7 @@ _Last updated: 2026-09-07 | Pages: 43 | Sources ingested: 19_
 | [[quartz-v5]] | Static site generator publishing Obsidian vaults as linked pages with a D3 graph — YAML config, plugins fetched at build time | quartz, obsidian, static-site, github-pages | [[2026-05-28-quartz-vault-publisher-build]] |
 | [[sprite-sheet-masking]] | Border flood-fill + closing beats colour distance; tolerances are per-sheet (20/25/10); shadows separate geometrically, not by colour | sprite-sheets, image-processing, sharp, alpha-masking | [[2026-09-07-minime-electron-companion]] |
 | [[semantic-animation-mapping]] | State machine emits animation meanings; each character maps them to its own art with an idle fallback — 9-frame and 31-frame characters share one behaviour layer | architecture, state-machine, animation, pattern | [[2026-09-07-minime-electron-companion]] |
+| [[gh-code-search-false-negative]] | `gh search code` silently returns 0 on RudraMind's unindexed repos — always run a positive control; use tree API / commits / shallow-clone grep instead | gh-cli, github, search, tooling, verification | [[2026-09-09-repo-inventory-and-gh-tooling-audit]] |
 
 ## Projects
 | Page | Summary | Tags | Sources |
@@ -59,6 +60,7 @@ _Last updated: 2026-09-07 | Pages: 43 | Sources ingested: 19_
 | [[2026-08-13-claude-projects-inventory]] | Survey of all 18 folders under .claude/projects — 7 session stores vs 11 real projects, 1.47 GB, only 4 own a .git | 2026-08-13 | |
 | [[2026-05-28-quartz-vault-publisher-build]] | Quartz v5 vault publisher build session — GitHub Actions cross-repo dispatch, Pages deploy | 2026-05-28 | |
 | [[2026-09-07-minime-electron-companion]] | MiniMe build-to-ship capture: architecture, 23 root-caused failures across art pipeline / state machine / packaging, decisions, open v1.2.0 gap | 2026-09-07 | |
+| [[2026-09-09-repo-inventory-and-gh-tooling-audit]] | "trinket" absent everywhere (verified 7 ways); full 13-repo + 26-clone inventory; gh code-search false negatives; stale gh username; dead RUDRA//OS pipeline paths | 2026-09-09 | |
 
 ## Queries
 | Page | Summary | Date | |
