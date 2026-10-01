@@ -1,5 +1,5 @@
 # Wiki Index
-_Last updated: 2026-09-09 | Pages: 45 | Sources ingested: 20_
+_Last updated: 2026-09-09 | Pages: 46 | Sources ingested: 20_
 
 ## Entities
 | Page | Summary | Tags | Sources |
@@ -26,6 +26,7 @@ _Last updated: 2026-09-09 | Pages: 45 | Sources ingested: 20_
 | [[sprite-sheet-masking]] | Border flood-fill + closing beats colour distance; tolerances are per-sheet (20/25/10); shadows separate geometrically, not by colour | sprite-sheets, image-processing, sharp, alpha-masking | [[2026-09-07-minime-electron-companion]] |
 | [[semantic-animation-mapping]] | State machine emits animation meanings; each character maps them to its own art with an idle fallback — 9-frame and 31-frame characters share one behaviour layer | architecture, state-machine, animation, pattern | [[2026-09-07-minime-electron-companion]] |
 | [[gh-code-search-false-negative]] | `gh search code` silently returns 0 on RudraMind's unindexed repos — always run a positive control; use tree API / commits / shallow-clone grep instead | gh-cli, github, search, tooling, verification | [[2026-09-09-repo-inventory-and-gh-tooling-audit]] |
+| [[ai-os-map]] | Two-hop signpost map of all projects/skills/docs + checker (MAPS layer M) | ai-os, maps | — |
 
 ## Projects
 | Page | Summary | Tags | Sources |

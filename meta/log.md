@@ -1,5 +1,9 @@
 # Wiki Log
 
+## [2026-09-30] create | AI OS Map
+- Created: [[ai-os-map]] (concept) — overview of the private two-hop signpost map (MAPS layer M) and its checker
+- Pages touched: [[ai-os-map]], meta/index.md (new Concepts row, page count 45 → 46)
+
 ## [2026-09-09] ingest | Repo Inventory and gh Tooling Audit
 - Mode: **capture** — inbox was empty; material gathered live on 2026-09-09 from the
   filesystem, 26 local clones and the GitHub API, then written to
